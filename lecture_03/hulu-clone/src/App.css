@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  background-color: #07202A;
+
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+}
