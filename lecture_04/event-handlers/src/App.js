@@ -8,7 +8,7 @@ import UseEffectComponent from './Components/UseEffectComponent';
 // homework.
 // 1. create a component with form for signup.
 // 2. useState for the signup variables
-// 3. useEffect for checking if the singups are correct for example if the email and password are valid.
+// 3. useEffect for checking if the singups are correct for example if the email and password are valid. >10
 // 4. make it look good with css
 
 // optional 
