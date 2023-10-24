@@ -1,0 +1,30 @@
+.product__page{
+    padding: 40px;
+}
+
+.product__card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+.product__image{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border-bottom: 1px solid gray;
+}
