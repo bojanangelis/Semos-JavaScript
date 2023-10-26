@@ -1,11 +1,18 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Navigate, Outlet } from 'react-router-dom'
 import Navbar from '../Components/Navbar'
+import { useNavigate } from 'react-router-dom'
 
-const CustomSharedLayout = () => {
+const CustomSharedLayout = ({ email }) => {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (!email) navigate('/login')
+  }, [])
+
   return (
     <>
-      <Navbar />
+      <Navbar user={email} />
       <Outlet />
     </>
   )
