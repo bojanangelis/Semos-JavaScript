@@ -1,7 +1,7 @@
 export const API_KEY = process.env.NEXT_PUBLIC_API_KEY
 export const API_URL = process.env.NEXT_PUBLIC_API_URL
 
-export default {
+const x = {
   fetchTrending: {
     title: 'Trending',
     url: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
@@ -47,3 +47,5 @@ export default {
     url: `/discover/movie?api_key=${API_KEY}&with_genres=10770`,
   },
 }
+
+export default x

@@ -1,13 +1,13 @@
 import React, { ForwardRefExoticComponent, RefAttributes, SVGProps } from 'react'
 
-interface HeaderItemProps {
+type HeaderItemProps = {
   Icon: ForwardRefExoticComponent<
     Omit<SVGProps<SVGSVGElement>, 'ref'> & {
       title?: string | undefined
       titleId?: string | undefined
     } & RefAttributes<SVGSVGElement>
   >
-  title: string
+  title: string | number | undefined
 }
 
 const HeaderItem = ({ Icon, title }: HeaderItemProps) => {

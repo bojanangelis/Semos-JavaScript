@@ -9,10 +9,12 @@ const Main = () => {
   const [movies, setMovies] = useState([])
   //   console.log('this is what i got from global state', globalState)
 
-  const x = API_URL + globalState.url
+  // const x = API_URL + globalState.url
 
   //   console.log('fetching here ->', x)
+
   useEffect(() => {
+    // console.log('useeffect called->> thisis my global store Recoil-->', globalState)
     fetch(API_URL + globalState.url)
       .then((response) => response.json())
       .then((response) => setMovies(response.results))

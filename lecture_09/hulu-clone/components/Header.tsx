@@ -13,11 +13,15 @@ import Image from 'next/image'
 import NavBar from './NavBar'
 
 const Header = () => {
+  // const x: string = ''
+  // const y: boolean = true
+  // const z: number = 2
+
   return (
     <>
       <header className='flex flex-col sm:flex-row m-5 justify-between items-center h-auto'>
         <div className='flex flex-grow'>
-          <HeaderItem Icon={HomeIcon} title={'HOME'} />
+          <HeaderItem Icon={HomeIcon} title={undefined} />
           <HeaderItem Icon={BoltIcon} title={'TRENDING'} />
           <HeaderItem Icon={CheckBadgeIcon} title={'VERIFIED'} />
           <HeaderItem Icon={RectangleStackIcon} title={'COLLECTIONS'} />
