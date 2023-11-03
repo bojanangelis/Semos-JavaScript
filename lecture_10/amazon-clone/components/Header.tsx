@@ -5,7 +5,7 @@ import { Bars3Icon, MagnifyingGlassIcon, ShoppingCartIcon } from '@heroicons/rea
 const Header = () => {
   return (
     //ceo
-    <header>
+    <header className=''>
       <div className='flex items-center bg-amazon_blue p-4 flex-grow'>
         {/* img */}
         <div className='mt-2 pr-4 flex items-center flex-grow sm:flex-grow-0'>
@@ -51,10 +51,14 @@ const Header = () => {
         <p className='flex items-center'>
           <Bars3Icon className='h-6 mr-1' />
         </p>
-        <p>Prime Video</p>
-        <p>Amazon Business</p>
-        <p>Prime Video</p>
-        <p>Prime Video</p>
+        <p className='link'>Prime Video</p>
+        <p className='link'>Amazon Business</p>
+        <p className='link'>Today's deals</p>
+        <p className='hidden md:inline-flex link'>Electronics</p>
+        <p className='hidden md:inline-flex link'>Food & grocery</p>
+        <p className='hidden md:inline-flex link'>Prime</p>
+        <p className='hidden md:inline-flex link'>Buy again</p>
+        <p className='hidden md:inline-flex link'>Shopper Toolkit</p>
       </div>
     </header>
   )
