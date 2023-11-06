@@ -14,6 +14,7 @@ const CheckoutProduct = ({
   rating,
 }) => {
   const dispatch = useDispatch()
+
   const handleAddItems = () => {
     dispatch(
       addToBasket({ id, title, price, description, category, image, rating }),

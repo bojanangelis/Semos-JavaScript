@@ -4,10 +4,14 @@ import Order from '../components/Order'
 import { useSelector } from 'react-redux'
 import { selectItems } from '../slices/basketSlice'
 import CheckoutProduct from '../components/CheckoutProduct'
+import useScrollPosition from '../hooks/useScrollPosition'
 
 const CartPage = () => {
+  const { hasScrolled } = useScrollPosition()
+
   const items = useSelector(selectItems)
-  console.log(items)
+
+  console.log(hasScrolled)
   return (
     <>
       <Header />

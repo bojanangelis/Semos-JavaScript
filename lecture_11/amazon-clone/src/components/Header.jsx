@@ -21,8 +21,6 @@ const Header = () => {
 
   const items = useSelector(selectItems)
 
-  console.log(items)
-
   return (
     //ceo
     <header className="">
